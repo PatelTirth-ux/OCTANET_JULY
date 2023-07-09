@@ -1,0 +1,162 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color and text color */
+  body {
+    
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main{ background-image: url("./begs.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+  /* Hero section styles */
+
+  .hero {
+ 
+    padding: 40px;
+  }
+  
+  .hero-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Services section styles */
+  .services {
+    
+    padding: 40px;
+  }
+  
+  .services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .services ul {
+    margin-bottom: 20px;
+  }
+  
+  .services li {
+    margin-bottom: 10px;
+  }
+  
+  /* Why Choose Us section styles */
+  .why-choose-us {
+    
+    padding: 40px;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us ul {
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact section styles */
+  .contact-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+  }
+  
+  .contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Login section styles */
+  .login-section {
+    background-color: #fff;
+    padding: 40px;
+  }
+  
+  .login-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* About section styles */
+  .about-section {
+    background-color: #fff;
+    padding: 40px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
