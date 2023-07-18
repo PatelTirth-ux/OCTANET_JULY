@@ -1,70 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service-Based Company</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="logo.png" alt="Company Logo" />
+<html>
+<head>
+  <title>Website Projects - Task Manager</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Website Projects - Task Manager</h1>
+    <form id="task-form">
+      <div class="form-row">
+        <label for="task-input">Task:</label>
+        <input type="text" id="task-input" placeholder="Task" required>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1><u>Welcome to Our Service-Based Company</u></h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            commodo orci a hendrerit iaculis. Integer feugiat velit a tempus
-            vehicula. Quisque consectetur faucibus consectetur.
-          </p>
-        </div>
-      </section>
+      <div class="form-row">
+        <label for="deadline-input">Deadline:</label>
+        <input type="date" id="deadline-input" required>
+      </div>
+      <div class="form-row">
+        <label for="priority-input">Priority:</label>
+        <select id="priority-input" required>
+          <option value="" selected disabled>Select Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="label-input">Label:</label>
+        <input type="text" id="label-input" placeholder="Label" required>
+      </div>
+      <button type="submit">Add Task</button>
+    </form>
 
-      <section class="services">
-        <h2>Our Services</h2><hr>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          commodo orci a hendrerit iaculis. Integer feugiat velit a tempus
-          vehicula.
-        </p>
-
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-        </ul>
-      </section>
-
-      <section class="why-choose-us">
-        <h2>Why Choose Us?</h2><hr>r̥
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          commodo orci a hendrerit iaculis. Integer feugiat velit a tempus
-          vehicula.
-        </p>
-
-        <ul>
-          <li>Reason 1</li>
-          <li>Reason 2</li>
-          <li>Reason 3</li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <p>Ready to get started? Contact us today!</p>
-      <a href="contact.html" class="btn">Contact Us</a>
-    </footer>
-  </body>
+    <div class="table-container">
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Label</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
 </html>
