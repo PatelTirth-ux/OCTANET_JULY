@@ -1,162 +1,115 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Set background color and text color */
-  body {
-    
-    color: #ffffff;
+body {
     font-family: Arial, sans-serif;
-  }
-  
-  /* Header styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #7b9ee2;
+    margin: 0;
     padding: 20px;
-    background-color: #007bff;
-    color: #fff;
   }
   
-  .logo img {
-    height: 40px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main{ background-image: url("./begs.png"); 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
- }
-  /* Hero section styles */
-
-  .hero {
- 
-    padding: 40px;
-  }
-  
-  .hero-content {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  /* Services section styles */
-  .services {
-    
-    padding: 40px;
-  }
-  
-  .services h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .services ul {
-    margin-bottom: 20px;
-  }
-  
-  .services li {
-    margin-bottom: 10px;
-  }
-  
-  /* Why Choose Us section styles */
-  .why-choose-us {
-    
-    padding: 40px;
-  }
-  
-  .why-choose-us h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .why-choose-us ul {
-    margin-bottom: 20px;
-  }
-  
-  .why-choose-us li {
-    margin-bottom: 10px;
-  }
-  
-  /* Contact section styles */
-  .contact-section {
-    background-color: #f4f4f4;
-    padding: 40px;
-  }
-  
-  .contact-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Login section styles */
-  .login-section {
-    background-color: #fff;
-    padding: 40px;
-  }
-  
-  .login-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* About section styles */
-  .about-section {
-    background-color: #fff;
-    padding: 40px;
-  }
-  
-  .about-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #007bff;
-    padding: 20px;
+  h1 {
     text-align: center;
-    color: #fff;
   }
   
-  .footer p {
-    margin-bottom: 0;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #eae4e4;
+    padding: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .btn:hover {
-    background-color: #0056b3;
+  .form-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .form-row label {
+    width: 100px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+  }
+  
+  .form-row input,
+  .form-row select {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-row button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .priority-high {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .priority-medium {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .priority-low {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .label-design {
+    background-color: #f9ca24;
+    color: #fff;
+  }
+  
+  .label-development {
+    background-color: #6ab04c;
+    color: #fff;
+  }
+  
+  .label-testing {
+    background-color: #e056fd;
+    color: #fff;
+  }
+  
+  .label-content {
+    background-color: #0984e3;
+    color: #fff;
+  }
+  
+  .label-marketing {
+    background-color: #fdcb6e;
+    color: #fff;
   }
   
