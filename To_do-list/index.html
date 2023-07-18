@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Projects - Task Manager</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Website Projects - Task Manager</h1>
+    <form id="task-form">
+      <div class="form-row">
+        <label for="task-input">Task:</label>
+        <input type="text" id="task-input" placeholder="Task" required>
+      </div>
+      <div class="form-row">
+        <label for="deadline-input">Deadline:</label>
+        <input type="date" id="deadline-input" required>
+      </div>
+      <div class="form-row">
+        <label for="priority-input">Priority:</label>
+        <select id="priority-input" required>
+          <option value="" selected disabled>Select Priority</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="label-input">Label:</label>
+        <input type="text" id="label-input" placeholder="Label" required>
+      </div>
+      <button type="submit">Add Task</button>
+    </form>
 
+    <div class="table-container">
+      <table id="task-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Deadline</th>
+            <th>Priority</th>
+            <th>Label</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
